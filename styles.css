@@ -1,0 +1,159 @@
+/* Ensure full width of the viewport */
+html, body {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: rgba(255, 215, 0, 0.8);
+    padding: 15px;
+    font-size: 1.5em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Category Dropdown */
+.category-dropdown {
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Product Tiles */
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-tile {
+    background: linear-gradient(145deg, #212121, #2c2c2c);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #2f2f2f;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-tile:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 10px 10px 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Cart Summary */
+#cart-summary {
+    background: #ff6b6b;
+    padding: 12px;
+    border-radius: 12px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Cart Summary Details */
+.cart-summary-details {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cart Buttons (Above Tiles) */
+.cart-summary-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Cart Item Tile (Square Shape) */
+.cart-item-tile {
+    background: linear-gradient(145deg, #212121, #2c2c2c);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 8px #1a1a1a, -3px -3px 8px #2f2f2f;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.cart-item-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Cart Button */
+.cart-button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 48%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cart-button:hover {
+    background: #ff4040;
+}
+/* Contact Button at Bottom */
+.contact-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #25D366; /* WhatsApp Green */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact-button:hover {
+    background: #1EBE5D;
+}
